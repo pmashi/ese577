@@ -1,0 +1,23 @@
+OK_FORMAT = True
+
+test = {   'name': 'q1.1.2',
+    'points': 2,
+    'suites': [   {   'cases': [   {   'code': '>>> a = np.array([[1, 2, 3], [4, 5, 6]])\n>>> isinstance(tp_112(a), np.ndarray)\nTrue',
+                                       'failure_message': 'Did not return a numpy array.',
+                                       'hidden': False,
+                                       'locked': False,
+                                       'points': 0},
+                                   {   'code': '>>> a = np.array([[1, 2, 3], [4, 5, 6]])\n>>> tp_112(a).shape == (3, 2)\nTrue',
+                                       'failure_message': 'The returned array does not have the correct shape.',
+                                       'hidden': False,
+                                       'locked': False,
+                                       'points': 0},
+                                   {   'code': '>>> a = np.array([[1, 2, 3], [4, 5, 6]])\n>>> aT = np.array([[1, 4], [2, 5], [3, 6]])\n>>> np.allclose(tp_112(a), aT)\nTrue',
+                                       'failure_message': "The returned array's entries do not match the expected entries.",
+                                       'hidden': False,
+                                       'locked': False,
+                                       'points': 0}],
+                      'scored': True,
+                      'setup': '',
+                      'teardown': '',
+                      'type': 'doctest'}]}

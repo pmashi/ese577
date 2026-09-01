@@ -1,0 +1,23 @@
+OK_FORMAT = True
+
+test = {   'name': 'q1.4.6',
+    'points': 0.5,
+    'suites': [   {   'cases': [   {   'code': '>>> A = np.array([[1, 2], [3, 4]])\n>>> isinstance(matrix_inverse_146(A), np.ndarray)\nTrue',
+                                       'failure_message': 'Your function does not return a numpy array.',
+                                       'hidden': False,
+                                       'locked': False,
+                                       'points': 0},
+                                   {   'code': '>>> A = np.array([[1, 2], [3, 4]])\n>>> Ainv = matrix_inverse_146(A)\n>>> Ainv.shape == A.shape\nTrue',
+                                       'failure_message': 'Your function does not return a matrix of the same shape as A.',
+                                       'hidden': False,
+                                       'locked': False,
+                                       'points': 0},
+                                   {   'code': '>>> A = np.array([[0, -1], [1, 0]])\n>>> Ainv = matrix_inverse_146(A)\n>>> np.allclose(Ainv, np.array([[0, 1], [-1, 0]]))\nTrue',
+                                       'failure_message': 'Your function does not return the correct matrix inverse.',
+                                       'hidden': False,
+                                       'locked': False,
+                                       'points': 0}],
+                      'scored': True,
+                      'setup': '',
+                      'teardown': '',
+                      'type': 'doctest'}]}

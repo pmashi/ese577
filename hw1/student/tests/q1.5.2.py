@@ -1,0 +1,23 @@
+OK_FORMAT = True
+
+test = {   'name': 'q1.5.2',
+    'points': 2,
+    'suites': [   {   'cases': [   {   'code': '>>> data = np.array([[1, 2], [3, 4]])\n>>> isinstance(transform_152(data), np.ndarray)\nTrue',
+                                       'failure_message': 'Your function does not return a numpy array.',
+                                       'hidden': False,
+                                       'locked': False,
+                                       'points': 0},
+                                   {   'code': '>>> data = np.array([[1, 2], [3, 4]])\n>>> transform_152(data).shape == (2, 1)\nTrue',
+                                       'failure_message': 'Your function does not return a column vector of the correct shape.',
+                                       'hidden': False,
+                                       'locked': False,
+                                       'points': 0},
+                                   {   'code': '>>> data = np.array([[1, 2], [3, 4]])\n>>> np.allclose(transform_152(data), np.array([[3], [7]]))\nTrue',
+                                       'failure_message': 'Your function does not return the correct column vector.',
+                                       'hidden': False,
+                                       'locked': False,
+                                       'points': 0}],
+                      'scored': True,
+                      'setup': '',
+                      'teardown': '',
+                      'type': 'doctest'}]}
